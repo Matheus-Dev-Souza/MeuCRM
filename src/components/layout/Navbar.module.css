@@ -1,0 +1,39 @@
+.navContainer {
+  @apply flex items-center justify-between px-6 py-4 max-w-7xl mx-auto w-full sticky top-0 z-50 bg-white/90 backdrop-blur-sm;
+}
+
+.leftSection {
+  @apply flex items-center gap-12;
+}
+
+.logo {
+  @apply text-3xl font-bold text-indigo-950 flex items-center cursor-pointer;
+}
+
+.logoSpan {
+  @apply text-indigo-600;
+}
+
+.menuLinks {
+  @apply hidden md:flex gap-8 text-sm font-medium text-gray-600;
+}
+
+.linkItem {
+  @apply hover:text-indigo-600 flex items-center gap-1 focus:outline-none transition-colors;
+}
+
+.rightSection {
+  @apply flex items-center gap-6;
+}
+
+.langSelector {
+  @apply hidden md:flex items-center gap-1 text-sm font-medium text-gray-600 cursor-pointer hover:text-indigo-600;
+}
+
+.btnLogin {
+  @apply text-sm font-bold text-indigo-900 hover:text-indigo-600 transition-colors;
+}
+
+.btnCta {
+  @apply bg-indigo-600 text-white px-6 py-3 rounded-lg text-sm font-bold shadow-lg shadow-indigo-200 flex items-center gap-2 transition-transform hover:bg-indigo-700 hover:scale-105;
+}

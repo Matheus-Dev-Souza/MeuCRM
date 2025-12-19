@@ -1,13 +1,17 @@
 import React from 'react';
 
-const FeatureCard = ({ icon, title, desc }) => {
+const FeatureCard = ({ icon, title, desc, color = 'indigo' }) => {
+  const colorClasses = color === 'blue' 
+    ? 'bg-blue-100 text-blue-600' 
+    : 'bg-indigo-100 text-indigo-600';
+
   return (
-    <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition text-left flex flex-col items-start hover:-translate-y-1 duration-300">
-      <div className="mb-4">
+    <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+      <div className={`p-4 rounded-full mb-6 w-fit ${colorClasses}`}>
         {icon}
       </div>
-      <h3 className="font-bold text-gray-900 text-lg mb-2">{title}</h3>
-      <p className="text-sm text-gray-500 leading-snug">{desc}</p>
+      <h3 className="font-bold text-indigo-950 text-xl mb-3">{title}</h3>
+      <p className="text-gray-500 leading-snug">{desc}</p>
     </div>
   );
 };
