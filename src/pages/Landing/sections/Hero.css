@@ -1,0 +1,41 @@
+.hero {
+  padding: 120px 0 80px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #5b5ef7;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #1f1f3a;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #6b7280;
+  max-width: 720px;
+  margin: 0 auto 40px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}

@@ -1,3 +1,73 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Reset básico */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis globais (facilita manutenção) */
+:root {
+  --primary: #5b5ef7;
+  --primary-hover: #4b4ee6;
+  --text-main: #1f1f3a;
+  --border-light: #dcdcff;
+  --bg-main: #ffffff;
+}
+
+/* Base */
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container padrão */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 24px;
+}
+
+/* Botão principal */
+.btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Botão outline */
+.btn-outline {
+  background-color: #ffffff;
+  color: var(--primary);
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-outline:hover {
+  background-color: #f6f6ff;
+  border-color: var(--primary);
+}
